@@ -1,19 +1,15 @@
-
-import Home from "./assets/home"
-
+import AddTaskForm from "./components/AddTaskForm";
+import Header from "./components/Header";
+import Stats from "./components/Stats";
+import TaskList from "./components/TaskList"
 
 function App() {
-const names = ['ali' , 'ahmed' , 'asas']
-  return (
-    <>
-<ul>
- {names.map(name => <li key={name}>{name}</li>)}
-</ul>
-<Home/>
-<button onClick={() => console.log(this)}> click</button>
-    </>
-  )
+  return <>
+    <Header/>
+    <Stats/>
+    <AddTaskForm/>
+    <TaskList/>
+  </>
 }
 
-export default App
-
+export default App;
