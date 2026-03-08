@@ -1,11 +1,11 @@
 function Header({title ,count}) {
 
     return (
-        <Header className="header" >
+        <header className="header" >
             <h1>{title}</h1>
             <p> عدد المهام : {count}</p>
-        </Header>
+        </header>
     )
 }
 
-export default Header
+export default Header;
