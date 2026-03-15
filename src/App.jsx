@@ -10,7 +10,7 @@ function App() {
     { id: 2, name: "Task 2", completed: true, priority: "medium" },
     { id: 3, name: "Task 3", completed: false, priority: "low" },
     { id: 4, name: "Task 4", completed: false, priority: "low" },
-    { id: 5, name: "Task 5", completed: true, priority: "low" },
+    { id: 5, name: "Task 5", completed: false, priority: "low" },
     { id: 6, name: "Task 6", completed: false, priority: "low" },
     { id: 7, name: "Task 7", completed: false, priority: "low" },
   ]);

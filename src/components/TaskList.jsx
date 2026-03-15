@@ -1,9 +1,12 @@
+import TaskItem from "./TaskItem"
 
 
-function TaskList() {
+function TaskList({ tasks, onToggle, onDelete }) {
+    
+
     return (
         <div>
-            TaskList
+            <TaskItem task={tasks} onToggle={onToggle} onDelete={onDelete}/>
         </div>
     )
 }
