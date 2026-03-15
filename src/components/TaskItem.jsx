@@ -4,7 +4,14 @@ function TaskItem({ task, onToggle, onDelete }) {
     color: task.completed ? "gray" : "black",
     opacity: task.completed ? 0.6 : 1,
   };
+
+  const priorityColors = {
+    high: "red",
+    medium: "orange",
+    low: "blue",
+  };
   console.log(task);
+  console.log(task.completed);
 
   return (
     <li className="task-item">
@@ -14,7 +21,7 @@ function TaskItem({ task, onToggle, onDelete }) {
         style={itemStyle}
       >
         {task.completed ? "👍" : "❌"} {task.name}
-        <span className="priority-badge">
+        <span className="priority-badge" style={{backgroundColor:priorityColors[task.priority]}}>
           {task.priority === "high" && "🔥"}
           {task.priority === "medium" && "⚡"}
           {task.priority === "low" && "❄️"}
